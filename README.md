@@ -15,7 +15,10 @@
 	* [Cross Site Request Forgery Attack](https://github.com/AsterYujano/Cybersecurity#cross-site-request-forgery-attack)
 2. [Phishing & BYOD](https://github.com/AsterYujano/Cybersecurity#phishing--byod)
 	* [Phisphing](https://github.com/AsterYujano/Cybersecurity#phishing)
-3. [Sources](https://github.com/AsterYujano/Cybersecurity#sources)
+3. [Security Network Architecture & Filtering](https://github.com/AsterYujano/Cybersecurity#security-network-architecture--filtering)
+	* [DMZ](https://github.com/AsterYujano/Cybersecurity#dmz)
+	* [Firewall](https://github.com/AsterYujano/Cybersecurity#firewall)
+4. [Sources](https://github.com/AsterYujano/Cybersecurity#sources)
 
 	
 	
@@ -200,6 +203,15 @@ An attacker executes un solicited action by a client on a site thanks to `cookie
 
 > To find an example of phishing technique, [look here](https://github.com/AsterYujano/security/tree/master/phishing)
 
+The link  to the false web site can be displayed in an e-mail, or on a popular website.
+
+__usurp link__
+DNS spoofing, DNS cache poisoning
+
+Approaching DNS name, example : www.go0gle.com
+
+Link alteration : www.google.dangerous.com/
+
 __Some steps to conduct phishing attack :__
 1. Create a similar web page as an official one,
 2. Listen good music (it is important), 
@@ -210,11 +222,41 @@ __Some steps to conduct phishing attack :__
 __Counter Measures :__
 * Buy the domain name close to yours.
 * User's awarness about strange mails (from the boss, or a friend, asking to typing password or to connect)
+* Inform the visiter about "nobody will ask about your password or credentials"
+* Watch matching with DNS server
 
 
 ### BYOD
 
-stuff incoming, be patient
+**B**ring **Y**our **O**wn **D**evice
+
+__Risks__
+* Data losses due to equipment loss/theft
+* Accidental data evasion
+* Phishing
+* Malevolent application stealing data
+* Fake Wifi point
+* User spying (software tool)
+* malware against smartphone banking app
+
+__Prevention__
+* Activate automatic terminal locking
+* Take care of the good reputation of applications to be installed
+* Assess application demand to data access
+* Reset and erase content before recycling
+* Allow only known applications to be installed (White List)
+* Consider ciphering storage for confidential data
+* Consider end-to-end ciphering to protect data transfers
+
+## Security Network Architecture & Filtering
+
+Be patient, stuff incoming
+
+
+### DMZ
+
+### Firewall
+
 
 ___
 
