@@ -12,6 +12,8 @@
 	* [Botnets](https://github.com/AsterYujano/Cybersecurity#dos--ddos)
 	* [Keyloggers](https://github.com/AsterYujano/Cybersecurity#keyloggers)
 	* [Virus](https://github.com/AsterYujano/Cybersecurity#virus)
+	* [Cross Site Request Forgery Attack](https://github.com/AsterYujano/Cybersecurity#cross-site-request-forgery-attack)
+	
 	
 	
 ## Risk Generalities
@@ -180,6 +182,14 @@ _Behavior analisis in Sandboxes_ - Best way but expensive.
 #### Watch about antivirus news & Update
 Updates and test. Read the news.
 
+### Cross Site Request Forgery Attack
+
+An attacker executes un solicited action by a client on a site.
+
+*example : *
+
+>"Consider that a user “John” browses through a legitimate website “www.example.com” and has a valid cookie on his hard disk. Meanwhile, an attacker, “Crusoe,” embeds a link to perform some delete action of “www.example.com” in an image and posts it on a site known as “www.exploit.com.” When the user John visits “www.exploit.com,” the webpage loads the image and in turns gives a delete request to “www.example.com.” When the web server receives the request, it looks for the cookie. It then finds John’s cookie, interprets this as a valid request, and performs the delete action."
+> infosecinstitute.com
 
 
 
