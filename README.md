@@ -184,9 +184,9 @@ Updates and test. Read the news.
 
 ### Cross Site Request Forgery Attack
 
-An attacker executes un solicited action by a client on a site.
+An attacker executes un solicited action by a client on a site thanks to `cookies`.
 
-*example : *
+*example :*
 
 >"Consider that a user “John” browses through a legitimate website “www.example.com” and has a valid cookie on his hard disk. Meanwhile, an attacker, “Crusoe,” embeds a link to perform some delete action of “www.example.com” in an image and posts it on a site known as “www.exploit.com.” When the user John visits “www.exploit.com,” the webpage loads the image and in turns gives a delete request to “www.example.com.” When the web server receives the request, it looks for the cookie. It then finds John’s cookie, interprets this as a valid request, and performs the delete action."
 > infosecinstitute.com
