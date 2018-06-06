@@ -1,5 +1,15 @@
 # Cybersecurity
 
+## Table of content
+
+1. [Risk Generalities](https://github.com/AsterYujano/Cybersecurity#risk-generalities)
+	* [Sniffing](https://github.com/AsterYujano/Cybersecurity#sniffing)
+	* [TCP spoofing](https://github.com/AsterYujano/Cybersecurity#spoofing)
+	* [SYN flooding Attack](https://github.com/AsterYujano/Cybersecurity#syn-flooding-attack)
+	* [DOS & DDOS](https://github.com/AsterYujano/Cybersecurity#dos--ddos)
+	* [Botnets](https://github.com/AsterYujano/Cybersecurity#dos--ddos)
+	* [Keyloggers](https://github.com/AsterYujano/Cybersecurity#keyloggers)
+	
 ## Risk Generalities
 
 ```
@@ -68,35 +78,8 @@ __How to counter them__
 	* Find infected devices
 	* Limit attack perimeter
 	* limiting damage
-
-
-***
-***
-***
-***
-___
-
-
-* Define the sniffing concept when talking about network security
-
-* Explain why it may be difficult to perform TCP spoofing						
-
-* Explain the concept of "SYN flooding" attack							
-
-In terms of network security, what is a DOS ? And a DDOS ?							
-
-Explain the concept of Botnets and what can be done to fight them							
-
-Give recommendations to fight against various types of keyloggers							
-
-The chief information officer asks you to expose him the various organizational and technical means that will help the company to struggle against virus and worms 					
-
-In Information System Security, give the two characteristics associated to the concept of risk							
-
-Explain how DICP four characteristics are used to define information System resource security needs	
-
-In security terms, according to you what is the greatest risk when using cookies to maintain sessions							
-						
+	
+### Keyloggers
 
 
 
