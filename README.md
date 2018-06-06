@@ -28,19 +28,22 @@ Users awarness remains essential.
 ```
 
 ### DICP
-_**D**isponibility_
+_**D**isponibility_ : Availability
 
 _**I**ntegrity_
 
 _**C**onfidentiality_
 
-_**P**roof_
+_**P**roof_ : Traceability
 
 ### Risk Concepts
 
-1. characteristic
+1. Reduce the probability to see threats become a reality
 
-2. characteristic
+2. Restrict the associated damages
+
+3. Allow to recover to usual functioning within satisfactory
+costs and time limits.
 
 ### Sniffing
 Consists to catch  a traffic image of the network.
