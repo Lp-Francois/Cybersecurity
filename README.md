@@ -37,6 +37,37 @@ By sniffing, hacker may observe victim answers even if these answers are not for
 ### SYN flooding Attack
 
 SYN Flood attack corresponds to a client who doesn’t answer to the SYN-ACK.
+The goal of the attack is to fill the queue on the server where partially
+established connections are stored.
+
+A way to counter this attack is to delete partially connections after a delay.
+
+### DOS & DDOS
+**D**enial **O**f **S**ervice & **D**istributed **D**enial **O**f **S**ervice
+
+A DOS consits to put down a service or a system.
+A DDOS is a DOS with multiples equipments.
+
+### Botnets
+
+__Explanation__
+A bot is an single infected machine, under control by untrusted person
+
+A _Botnet_ : a network of bots working together
+A _bot-herder_ : a the bot operator (i.e. bad human)
+_Command & Control server_ : the botnet brain
+
+Botnets are using to do DDOS, spamming, steal passwords, 
+
+
+__How to counter them__
+* _Decapitation_ ! Separate the bots from the _Command & Control servers_. Without intructions from a server, bots can't change their code to sneak, or target a new victim.
+
+* _Defend !_
+	* Preventing infections
+	* Find infected devices
+	* Limit attack perimeter
+	* limiting damage
 
 
 ***
