@@ -260,6 +260,12 @@ Be patient, stuff incoming
 
 ### DMZ
 
+**D**eMilitarized **Z**ones are networks with more or less public accesses
+
+-> *Partition the network to confine the risk*
+
+An added network between a protected network and an external one to provide an additional layer of security
+
 ### Firewall
 
 ## PKI Digital certificate & Digital signature
