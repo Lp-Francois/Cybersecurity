@@ -13,7 +13,10 @@
 	* [Keyloggers](https://github.com/AsterYujano/Cybersecurity#keyloggers)
 	* [Virus](https://github.com/AsterYujano/Cybersecurity#virus)
 	* [Cross Site Request Forgery Attack](https://github.com/AsterYujano/Cybersecurity#cross-site-request-forgery-attack)
-	
+2. [Phishing & BYOD](https://github.com/AsterYujano/Cybersecurity#phishing--byod)
+	* [Phisphing](https://github.com/AsterYujano/Cybersecurity#phishing)
+3. [Sources](https://github.com/AsterYujano/Cybersecurity#sources)
+
 	
 	
 ## Risk Generalities
@@ -191,9 +194,39 @@ An attacker executes un solicited action by a client on a site thanks to `cookie
 >"Consider that a user “John” browses through a legitimate website “www.example.com” and has a valid cookie on his hard disk. Meanwhile, an attacker, “Crusoe,” embeds a link to perform some delete action of “www.example.com” in an image and posts it on a site known as “www.exploit.com.” When the user John visits “www.exploit.com,” the webpage loads the image and in turns gives a delete request to “www.example.com.” When the web server receives the request, it looks for the cookie. It then finds John’s cookie, interprets this as a valid request, and performs the delete action."
 > *from* infosecinstitute.com
 
+## Phishing & BYOD
+
+### Phishing
+
+> To find an example of phishing technique, [look here](https://github.com/AsterYujano/security/tree/master/phishing)
+
+__Some steps to conduct phishing attack :__
+1. Create a similar web page as an official one,
+2. Listen good music (it is important), 
+3. Create a mail similar to an official mail of the site,
+3. Send an email to someone and try to do him click on YOUR website (the wrong one),
+4. Get the identifiers and passwords/credit cards.
+
+__Counter Measures :__
+* Buy the domain name close to yours.
+* User's awarness about strange mails (from the boss, or a friend, asking to typing password or to connect)
 
 
+### BYOD
 
+stuff incoming, be patient
+
+___
+
+> "Don't be the [wicked](https://www.youtube.com/watch?v=HKtsdZs9LJo) guy and become an ethical hacker"
+
+___
+
+## Sources
+
+Lessons from ISEP - Jacquy LEMEE
+
+https://resources.infosecinstitute.com/risk-associated-cookies/
 
 
 
