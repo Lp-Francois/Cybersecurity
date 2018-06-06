@@ -3,6 +3,7 @@
 ## Table of content
 
 1. [Risk Generalities](https://github.com/AsterYujano/Cybersecurity#risk-generalities)
+	* [Risk Concept](https://github.com/AsterYujano/Cybersecurity#risk-concept)
 	* [Sniffing](https://github.com/AsterYujano/Cybersecurity#sniffing)
 	* [TCP spoofing](https://github.com/AsterYujano/Cybersecurity#tcp-spoofing)
 	* [SYN flooding Attack](https://github.com/AsterYujano/Cybersecurity#syn-flooding-attack)
@@ -24,6 +25,21 @@ Never use a USB key found in a car park...
 
 Users awarness remains essential.
 ```
+
+### DICP
+_**D**isponibility_
+
+_**I**ntegrity_
+
+_**C**onfidentiality_
+
+_**P**roof_
+
+### Risk Concept
+
+1. characteristic
+
+2. characteristic
 
 ### Sniffing
 Consists to catch  a traffic image of the network.
@@ -137,7 +153,7 @@ Parade : desactivate macro
 Propagation through mails in messages and attached pieces.
 Use a secure mail and browser. Forbied attached mails and excecutable attachments. 
 
-__Components to struggle virus__
+__Components to struggle virus :__
 
 #### Enduser equipment security
 Secure OS, email and browser.
@@ -152,6 +168,15 @@ Teach best practices to follow :
 - Read the security charts and know the punishments.
 
 #### Antivirus
+_Scanner method_ - scan signatures
+_Heuristic Method_ - Look for abnormal behavio
+_Generic Method_ - Have a reference (clean file) and compare others files to it. A virus modify the objects he infects.
+_Behavior analisis in Sandboxes_ - Best way but expensive.
+
+#### Watch about antivirus news & Update
+Updates and test. Read the news.
+
+
 
 
 
