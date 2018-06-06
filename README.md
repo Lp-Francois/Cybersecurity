@@ -4,11 +4,13 @@
 
 1. [Risk Generalities](https://github.com/AsterYujano/Cybersecurity#risk-generalities)
 	* [Sniffing](https://github.com/AsterYujano/Cybersecurity#sniffing)
-	* [TCP spoofing](https://github.com/AsterYujano/Cybersecurity#spoofing)
+	* [TCP spoofing](https://github.com/AsterYujano/Cybersecurity#tcp-spoofing)
 	* [SYN flooding Attack](https://github.com/AsterYujano/Cybersecurity#syn-flooding-attack)
 	* [DOS & DDOS](https://github.com/AsterYujano/Cybersecurity#dos--ddos)
 	* [Botnets](https://github.com/AsterYujano/Cybersecurity#dos--ddos)
 	* [Keyloggers](https://github.com/AsterYujano/Cybersecurity#keyloggers)
+	* [Virus](https://github.com/AsterYujano/Cybersecurity#virus)
+	
 	
 ## Risk Generalities
 
@@ -16,7 +18,11 @@
 "Every security rule or recommendation must be accompanied by its justification
 in order to net be rejected or by-passed"
 
-Trusted networks zone = networks on which we master the security
+Trusted networks zone => networks on which we master the security
+
+Never use a USB key found in a car park...
+
+Users awarness remains essential.
 ```
 
 ### Sniffing
@@ -80,6 +86,40 @@ __How to counter them__
 	* limiting damage
 	
 ### Keyloggers
+
+Trojan variant intercepting keystrokes. 2 types :
+* __Hardware__ - Install between the keyboard and the system. Wicked needs to gain physical access.
+* __Software__ 
+	* Freeware, easy to find on internet
+	* Commercial, sell in US to spy family
+
+/!\ Keyloggers can steal all confidential informations : credit cards, password, identifiers, etc...
+Storage or send datas to malicious people.
+
+__Counter-measures__
+
+* Keyloggers remain trojan and can be fight as a virus. So keep your Anti-virus updated : Signatures basis must be keep up-to-date.
+* Firewall because if the keylogger exports datas collected through the network, the firewall can detect a unusual/non-conform port used.
+* Protect the physical access & Search for keyloggers around keyboard.
+* Keyloggers focus on password so use tokens, digital certificate, biometric stuff, etc.
+* And users awarness remains essential. __Users awarness remains essential.__ U-s-e-r-s a-w-a-r-n-e... OK you get it.
+
+
+### Virus
+
+__Vocabulary__
+Wild Virus : most common
+Zoo Virus : old ones and in laboratories
+False positive : wrongly detected as virus
+False negative : undetected by anti-virus
+Known virus : Listed by anti-virus editor
+Unknown virus : isn't or is no more in the antivirus signatures table
+Polymorph virus : Light modification of the code to modify the signature
+
+__Different virus__
+	
+	[...]
+
 
 
 
