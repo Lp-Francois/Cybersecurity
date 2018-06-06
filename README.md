@@ -30,7 +30,7 @@ Consists to catch  a traffic image of the network.
 
 >For the hacker, the goal is to get information to prepare the attack
 
-/!\ If someone if sniffing, he can see in `plaintext` all the messages using telnet, http, etc...
+/!\ If someone is sniffing, he can see in `plaintext` all the messages using telnet, http, etc...
 
 ### TCP spoofing
 
@@ -70,7 +70,9 @@ __Explanation__
 A bot is an single infected machine, under control by untrusted person
 
 A _Botnet_ : a network of bots working together
+
 A _bot-herder_ : a the bot operator (i.e. bad human)
+
 _Command & Control server_ : the botnet brain
 
 Botnets are using to do DDOS, spamming, steal passwords, 
@@ -108,17 +110,60 @@ __Counter-measures__
 ### Virus
 
 __Vocabulary__
-Wild Virus : most common
-Zoo Virus : old ones and in laboratories
-False positive : wrongly detected as virus
-False negative : undetected by anti-virus
-Known virus : Listed by anti-virus editor
-Unknown virus : isn't or is no more in the antivirus signatures table
-Polymorph virus : Light modification of the code to modify the signature
+* Wild Virus : most common.
+* Zoo Virus : old ones and in laboratories.
+* False positive : wrongly detected as virus.
+* False negative : undetected by anti-virus.
+* Known virus : Listed by anti-virus editor.
+* Unknown virus : isn't or is no more in the antivirus signatures table.
+* Polymorph virus : Light modification of the code to modify the signature.
 
-__Different virus__
-	
-	[...]
+__Different virus :__
+
+#### Boot virus
+Infect when the computer boots (from external drive). 
+Counter-measure : BIOS setup, avoid boot from external drive.
+
+#### Excecutable virus
+Propagation through excecutable file. 
+Infection when the infected program is excecuted (games, utilities).
+
+#### Macro virus
+Propagation through Word, Excel, Access. 
+Infection when file is opened with the associated application. 
+Parade : desactivate macro
+
+#### Worm
+Propagation through mails in messages and attached pieces.
+Use a secure mail and browser. Forbied attached mails and excecutable attachments. 
+
+__Components to struggle virus__
+
+#### Enduser equipment security
+Secure OS, email and browser.
+Apply patches, don't install unnecessary products and utilities, minimize started services.
+
+#### User awareness
+Sensitization : sessions, flyers, etc.
+
+Teach best practices to follow :
+- Doesn't open all documents,
+- Care to downloading,
+- Read the security charts and know the punishments.
+
+#### Antivirus
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
