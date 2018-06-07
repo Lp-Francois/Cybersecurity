@@ -21,6 +21,7 @@
 	* [DMZ](https://github.com/AsterYujano/Cybersecurity#dmz)
 	* [Firewall & Router](https://github.com/AsterYujano/Cybersecurity#firewall--router)
 	* [Intrusion Detection Systems](https://github.com/AsterYujano/Cybersecurity#intrusion-detection-systems)
+	* [Internet Access point](https://github.com/AsterYujano/Cybersecurity#internet-access-point)
 5. [PKI Digital certificate & Digital signature](https://github.com/AsterYujano/Cybersecurity#pki-digital-certificate--digital-signature)
 6. [Sources](https://github.com/AsterYujano/Cybersecurity#sources)
 
@@ -37,6 +38,8 @@ Trusted networks zone => networks on which we master the security
 Never use a USB key found in a car park...
 
 Users awarness remains essential.
+
+The strength of the break is equal to the weakest channel passing through
 ```
 
 ### DICP
@@ -293,9 +296,62 @@ __Principle:__ watch traffic and events in a real-time or on differed-time to de
 
 __Goal:__ Alert and restrict the time delay for the hacker to act.
 
-* HIDS: Host IDS
+* HIDS: Host IDS -> resources, logs, ...
+	* files/folders missing, moved, modified altered
+	* problems with logs (missing, altered, etc)
+	* user profile modification, new User id
+	* user abnormal activity (i.e. accounting who launches coding environment)
+	* resources over consumption (consommation) : disk space, CPU time...
+	* nightly use
 
-* NIDS: Network IDS
+* NIDS: Network IDS -> Packet analysis
+	* Unexplained significant level of traffic
+	* unusual ingoing or outgoing accesses with unusual sites
+	* over busy networks links
+	* complaining from users or from remote systems {todo : developper la ligne}
+	
+	* __Passive NIDS__: watch and alert,
+	* __Active NIDS__: watch and may interrupt suspected sessions. Use this way when false positive are rare.
+	
+__Why looking for detect intrusions ?__
+
+Not possible to stop all intrusions (cost, complex), and difficulties to keep up to date EACH equipments. Furthermore, firewall can't see every danger.
+
+__Two approaches :__
+
+* _Modeling behavior_, understand a routine to detect deviating events.
+* _Vunerabilities knowledge_, search for common and latest vulnerabilities usage.
+
+__Two problems :__
+
+* Up-to-date signature bases (exhaustivity of attacks)
+* Efficiency of apckets capture
+
+### Internet Access Point
+
+#### Principles
+
+* __Deny all__ access unless the access is proved to be needed and agreed
+* __The security means must be redundant__, multiples IAP, hardrives, etc
+* __Confining the risk__, the architecture of the access point have to distinguish the different security levels. It is the _onion rings_ principle (public DMZ, private DMZ, legacy systems).
+* __Content analysis__, Traffic must be analyzed and logged.
+* __Restrain the number of channels__ : The strength of the break is equal to the
+weakest channel passing through, *The strength of the break is equal to the
+weakest channel passing through*. It is very important.
+* Protect your IAP against adapted threats.
+* Upholding conformity to the Security Policy
+* Vigilance principle : Security components must be able to help us answer the question : Are we under attack ?
+* Set to production only what you may operate
+* Systematic agreement before operational usage (Tests, audits, pentests)
+
+> Give three technical actions to follow in order to protect a web server faces internet risks.
+>
+> Set to production only what you may operate, Systematic agreement before operational usage (Tests, audits, pentests) & Upholding conformity to the Security Policy
+
+> In order to protect from danger coming with mobile codes describe three main content filtering priciples that may be employed
+>
+> {todo} Answer
+
 
 
 ## PKI Digital certificate & Digital signature
@@ -313,6 +369,7 @@ Lessons from ISEP - Jacquy LEMEE
 
 https://resources.infosecinstitute.com/risk-associated-cookies/
 
+https://www.ivision.fr/redondance-et-securite-du-systeme-dinformation/
 
 
 
