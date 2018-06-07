@@ -1,6 +1,8 @@
 # Cybersecurity
 
-## Table of content
+___
+
+# Table of content
 
 1. [Risk Generalities](https://github.com/AsterYujano/Cybersecurity#risk-generalities)
 	* [DICP](https://github.com/AsterYujano/Cybersecurity#dicp)
@@ -28,7 +30,7 @@
 
 	
 	
-## Risk Generalities
+# Risk Generalities
 
 ```
 "Every security rule or recommendation must be accompanied by its justification
@@ -43,7 +45,7 @@ Users awarness remains essential.
 The strength of the break is equal to the weakest channel passing through
 ```
 
-### DICP
+## DICP
 _**D**isponibility_ : Availability
 
 _**I**ntegrity_
@@ -52,7 +54,7 @@ _**C**onfidentiality_
 
 _**P**roof_ : Traceability
 
-### Risk Concepts
+## Risk Concepts
 
 1. Reduce the probability to see threats become a reality
 
@@ -61,14 +63,14 @@ _**P**roof_ : Traceability
 3. Allow to recover to usual functioning within satisfactory
 costs and time limits.
 
-### Sniffing
+## Sniffing
 Consists to catch  a traffic image of the network.
 
 >For the hacker, the goal is to get information to prepare the attack
 
 /!\ If someone is sniffing, he can see in `plaintext` all the messages using telnet, http, etc...
 
-### TCP spoofing
+## TCP spoofing
 
 TCP uses a Three-way handshake.
 ![Three-way handshake](https://github.com/AsterYujano/Cybersecurity/blob/master/img/3wayhs.PNG)
@@ -86,7 +88,7 @@ By sniffing, hacker may observe victim answers even if these answers are not for
 
 * TCP spoofing on being externally to the victim or usurped machine sub-network. The hacker as to guess the next sequence number. This one is coded on 32 bits. 2^32 possibilities...
 
-### SYN flooding Attack
+## SYN flooding Attack
 
 SYN Flood attack corresponds to a client who doesn’t answer to the SYN-ACK.
 The goal of the attack is to fill the queue on the server where partially
@@ -94,13 +96,13 @@ established connections are stored.
 
 A way to counter this attack is to delete partially connections after a delay.
 
-### DOS & DDOS
+## DOS & DDOS
 **D**enial **O**f **S**ervice & **D**istributed **D**enial **O**f **S**ervice
 
 A DOS consits to put down a service or a system.
 A DDOS is a DOS with multiples equipments.
 
-### Botnets
+## Botnets
 
 __Explanation__
 A bot is an single infected machine, under control by untrusted person
@@ -123,7 +125,7 @@ __How to counter them__
 	* Limit attack perimeter
 	* limiting damage
 	
-### Keyloggers
+## Keyloggers
 
 Trojan variant intercepting keystrokes. 2 types :
 * __Hardware__ - Install between the keyboard and the system. Wicked needs to gain physical access.
@@ -143,7 +145,7 @@ __Counter-measures__
 * And users awarness remains essential. __Users awarness remains essential.__ U-s-e-r-s a-w-a-r-n-e... OK you get it.
 
 
-### Virus
+## Virus
 
 __Vocabulary__
 * Wild Virus : most common.
@@ -156,30 +158,30 @@ __Vocabulary__
 
 __Different virus :__
 
-#### Boot virus
+### Boot virus
 Infect when the computer boots (from external drive). 
 Counter-measure : BIOS setup, avoid boot from external drive.
 
-#### Excecutable virus
+### Excecutable virus
 Propagation through excecutable file. 
 Infection when the infected program is excecuted (games, utilities).
 
-#### Macro virus
+### Macro virus
 Propagation through Word, Excel, Access. 
 Infection when file is opened with the associated application. 
 Parade : desactivate macro
 
-#### Worm
+### Worm
 Propagation through mails in messages and attached pieces.
 Use a secure mail and browser. Forbied attached mails and excecutable attachments. 
 
 __Components to struggle virus :__
 
-#### Enduser equipment security
+### Enduser equipment security
 Secure OS, email and browser.
 Apply patches, don't install unnecessary products and utilities, minimize started services.
 
-#### User awareness
+### User awareness
 Sensitization : sessions, flyers, etc.
 
 Teach best practices to follow :
@@ -187,16 +189,16 @@ Teach best practices to follow :
 - Care to downloading,
 - Read the security charts and know the punishments.
 
-#### Antivirus
+### Antivirus
 _Scanner method_ - scan signatures
 _Heuristic Method_ - Look for abnormal behavio
 _Generic Method_ - Have a reference (clean file) and compare others files to it. A virus modify the objects he infects.
 _Behavior analisis in Sandboxes_ - Best way but expensive.
 
-#### Watch about antivirus news & Update
+### Watch about antivirus news & Update
 Updates and test. Read the news.
 
-### Cross Site Request Forgery Attack
+## Cross Site Request Forgery Attack
 
 An attacker executes un solicited action by a client on a site thanks to `cookies`.
 
@@ -205,9 +207,9 @@ An attacker executes un solicited action by a client on a site thanks to `cookie
 >"Consider that a user “John” browses through a legitimate website “www.example.com” and has a valid cookie on his hard disk. Meanwhile, an attacker, “Crusoe,” embeds a link to perform some delete action of “www.example.com” in an image and posts it on a site known as “www.exploit.com.” When the user John visits “www.exploit.com,” the webpage loads the image and in turns gives a delete request to “www.example.com.” When the web server receives the request, it looks for the cookie. It then finds John’s cookie, interprets this as a valid request, and performs the delete action."
 > *from* infosecinstitute.com
 
-## Phishing & BYOD
+# Phishing & BYOD
 
-### Phishing
+## Phishing
 
 > To find an example of phishing technique, [look here](https://github.com/AsterYujano/security/tree/master/phishing)
 
@@ -234,7 +236,7 @@ __Counter Measures :__
 * Watch matching with DNS server
 
 
-### BYOD
+## BYOD
 
 **B**ring **Y**our **O**wn **D**evice
 
@@ -256,14 +258,13 @@ __Prevention__
 * Consider ciphering storage for confidential data
 * Consider end-to-end ciphering to protect data transfers
 
-## Cloud Computing & ISMS
+# Cloud Computing & ISMS
 
-## Security Network Architecture & Filtering
+> Content incoming, just wait
 
-Be patient, stuff incoming
+# Security Network Architecture & Filtering
 
-
-### DMZ
+## DMZ
 
 **D**eMilitarized **Z**ones are networks with more or less public accesses, added network(s) between a protected network and an external one to provide an additional layer of security
 
@@ -272,7 +273,7 @@ Be patient, stuff incoming
 The correct approach in filtering is : everything is forbidden, just permit the flow you know (kinda ACL).
 
 
-### Firewall & Router
+## Firewall & Router
 
 Partition the network: IP packets examination and able to examine until application layer.
 
@@ -291,7 +292,7 @@ Using ACL allows to write specific rules. But a router doesn't log traffic easil
 >
 > *TCP-IP header : ACK bit is set to 0, it means that the first connection to a server.*
 
-### Intrusion Detection Systems
+## Intrusion Detection Systems
 
 __Principle:__ watch traffic and events in a real-time or on differed-time to detect abnormal behaviour and attacks. Sys Admin must regularly check the logs and reports.
 
@@ -328,9 +329,9 @@ __Two problems :__
 * Up-to-date signature bases (exhaustivity of attacks)
 * Efficiency of apckets capture
 
-### Internet Access Point
+## Internet Access Point
 
-#### Principles
+### Principles
 
 * __Deny all__ access unless the access is proved to be needed and agreed
 * __The security means must be redundant__, multiples IAP, hardrives, etc
@@ -353,11 +354,9 @@ weakest channel passing through*. It is very important.
 >
 > {todo} Answer
 
+# PKI Digital certificate & Digital signature
 
-
-## PKI Digital certificate & Digital signature
-
-### PKI
+## PKI
 
 __P__ublic __K__ey __I__nfrastructure
 
@@ -368,7 +367,7 @@ ___
 
 ___
 
-## Sources
+# Sources
 
 Lessons from ISEP - Jacquy LEMEE
 
