@@ -270,7 +270,7 @@ The correct approach in filtering is : everything is forbidden, just permit the 
 
 ### Firewall & Router
 
-Partition the network : IP packets examination and able to examine until application layer.
+Partition the network: IP packets examination and able to examine until application layer.
 
 Keeps the logs and alerts, and furtermore : User friendly interface !
 
@@ -289,7 +289,13 @@ Using ACL allows to write specific rules. But a router doesn't log traffic easil
 
 ### Intrusion Detection Systems
 
+__Principle:__ watch traffic and events in a real-time or on differed-time to detect abnormal behaviour and attacks. Sys Admin must regularly check the logs and reports.
 
+__Goal:__ Alert and restrict the time delay for the hacker to act.
+
+* HIDS: Host IDS
+
+* NIDS: Network IDS
 
 
 ## PKI Digital certificate & Digital signature
