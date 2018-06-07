@@ -78,6 +78,12 @@ Consists to catch  a traffic image of the network.
 
 ## TCP spoofing
 
+In TCP header, there are 6 bits to influence the TCP behavior :
+
+URG - __ACK__ - PSH - RST - __SYN__ - FIN
+
+![TCP header](https://github.com/AsterYujano/Cybersecurity/blob/master/img/tcp_header.gif)
+
 TCP uses a Three-way handshake.
 ![Three-way handshake](https://github.com/AsterYujano/Cybersecurity/blob/master/img/3wayhs.PNG)
 1. The first packet is a SYNC. The sequence number is A.
