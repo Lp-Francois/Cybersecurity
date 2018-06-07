@@ -1,5 +1,6 @@
-# Cybersecurity
+___
 
+# Cybersecurity
 ___
 
 # Table of content
@@ -24,8 +25,11 @@ ___
 	* [Firewall & Router](https://github.com/AsterYujano/Cybersecurity#firewall--router)
 	* [Intrusion Detection Systems](https://github.com/AsterYujano/Cybersecurity#intrusion-detection-systems)
 	* [Internet Access point](https://github.com/AsterYujano/Cybersecurity#internet-access-point)
-5. [PKI Digital certificate & Digital signature](https://github.com/AsterYujano/Cybersecurity#pki-digital-certificate--digital-signature)
+5. [PKI Digital certificate & Digital signature](https://github.com/AsterYujano/Cybersecurity#pki-digital-certificate--digital-signature) {todo modify title} 
+	* [Logs & Security Qualification](https://github.com/AsterYujano/Cybersecurity#logs--security-qualification)
+	* [Remote accesses](https://github.com/AsterYujano/Cybersecurity#remote-accesses)
 	* [PKI](https://github.com/AsterYujano/Cybersecurity#pki)
+}
 6. [Sources](https://github.com/AsterYujano/Cybersecurity#sources)
 
 	
@@ -354,7 +358,53 @@ weakest channel passing through*. It is very important.
 >
 > {todo} Answer
 
-# PKI Digital certificate & Digital signature
+# How to etablish trust ?
+
+## Logs & Security Qualification
+
+### Logs
+
+Logs permits to keep trace of activity and understand an attack.
+Also it can be usefull to detect something wrong happening.
+
+### Security Qualification
+
+__Black box__
+
+Audit without adding information
+
+__Grey box__
+
+Audit with specifics perimeter and informations
+
+__White/Crystal box__
+
+Acces to all informations and components (architectures, config, codes, ...) 
+
+## Remote Accesses
+
+### Authentification
+
+**P**oint to **P**oint **P**rotocol allows to send data over a serial connection.
+
+There are 2 authentification protocols :
+
+* __PAP__ - **P**assword **A**uthentification **P**rotocol. The client sends username and pass, they may be hijacked
+* __CHAP__ - **C**hallenge **H**andshake **A**uthentification **P**rotocol. The server sends a challenge to the client who ciphers it and sends it
+back to the server. The server does the same ciphering of the
+challenge and compare the two.  CHAP requires that both the client and server know the plaintext of the secret, although it is never sent over the network
+* __TACACS__ - A auth server answering to the access server if the user has the rights.
+* RADIUS
+* TACACS +
+
+## VPN
+
+**V**irtual **P**rivate **N**etworks
+
+
+
+
+
 
 ## PKI
 
@@ -376,6 +426,8 @@ Lessons from ISEP - Jacquy LEMEE
 https://resources.infosecinstitute.com/risk-associated-cookies/
 
 https://www.ivision.fr/redondance-et-securite-du-systeme-dinformation/
+
+https://en.wikipedia.org/wiki/Challenge-Handshake_Authentication_Protocol
 
 
 
