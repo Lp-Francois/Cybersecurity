@@ -472,6 +472,8 @@ Everyone knowing the public key of the sender (Alice) may decipher the message a
 
 ### RSA
 
+RSA is a kind of encryption.
+
 RSA security depends on the difficulty to factorize big prime numbers. 
 Public and private keys are function of a big prime numbers pair. 
 2 big prime numbers are chosen : p & q. 
@@ -492,6 +494,35 @@ Numbers d AND n constitute the private key.
 ## PKI
 
 **P**ublic **K**ey **I**nfrastructure
+
+The problem with the Asymetric cyphering is the following : "How can I be sure that I'm sending my private message to Alice and not to some Hackers ?"
+
+> PKI is a networked system that enables companies and users to exchange information and money safely and securely.
+
+__Digital Certificates__
+
+**D**igital **C**ertificates are data packages that identify : in this case person that is associated with his public key. A digital certificate is protected with asymetric cryptography and hold by a trusted authority (**C**ertificate **A**uthority).
+
+Imagine that Alice got a digital certificate. 
+So when Bob wants to send confidential informations to Alice, he can ask at a **CA** the Alice's digital certificate, compare it with the public key Alice is sending. Then he sends the encrypted message with the public key to Alice.
+
+It is very important in Commercial transactions to make sure you are sending your informations to the right web site.
+
+**R**egistration **A**uthority verifies the prospective key owner's identify and sends it to the CA to issue a certificate.
+It is a kind of secretary of CA. It verifies your informations.
+
+**RA** interacts with the subscribers for providing **CA** services and the **RA** is subsumed in the **CA**, which takes total responsibility for all action of the **RA**.
+
+Other terms :
+
+**C**ertificate **R**evocation **L**ists are lists of certificates that are no longer useable. The list is frequently up-to-date.
+
+**R**ecovery **A**gent : a person who is authorized to recover lost private key.
+
+**K**ey **E**scrow : Keeping secured copies of private keys for law enforcement purposes.
+
+
+
 
 
 
