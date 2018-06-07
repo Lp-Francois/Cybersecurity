@@ -85,7 +85,9 @@ URG - __ACK__ - PSH - RST - __SYN__ - FIN
 ![TCP header](https://github.com/AsterYujano/Cybersecurity/blob/master/img/tcp_header.gif)
 
 TCP uses a Three-way handshake.
+
 ![Three-way handshake](https://github.com/AsterYujano/Cybersecurity/blob/master/img/3wayhs.PNG)
+
 1. The first packet is a SYNC. The sequence number is A.
 2. Answering  a SYNC-ACK packet. The sequence number is B and the acknowledgment number is (A+1).
 3. Sequence number A+1 and acknowledgment number B+1
