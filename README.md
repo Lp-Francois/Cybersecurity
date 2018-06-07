@@ -19,7 +19,9 @@ ___
 2. [Phishing & BYOD](https://github.com/AsterYujano/Cybersecurity#phishing--byod)
 	* [Phisphing](https://github.com/AsterYujano/Cybersecurity#phishing)
 3. [Cloud Computing & ISMS](https://github.com/AsterYujano/Cybersecurity#cloud-computing--isms)
-	* {todo}
+	* [ICMP](https://github.com/AsterYujano/Cybersecurity#icmp)
+	* [SASS](https://github.com/AsterYujano/Cybersecurity#sass)
+	* [ISMS](https://github.com/AsterYujano/Cybersecurity#isms)
 4. [Security Network Architecture & Filtering](https://github.com/AsterYujano/Cybersecurity#security-network-architecture--filtering)
 	* [DMZ](https://github.com/AsterYujano/Cybersecurity#dmz)
 	* [Firewall & Router](https://github.com/AsterYujano/Cybersecurity#firewall--router)
@@ -273,7 +275,47 @@ __Prevention__
 
 # Cloud Computing & ISMS
 
-> Content incoming, just wait
+{todo IPSEC ?}
+
+## ICMP
+
+Internet Control Message Protocol, usefull to debug !
+
+A ping uses ICMP.
+
+/!\ ICMP Packets have priority on other packets.
+
+__Risks__:
+
+* DOS by saturation 1 - sending to the target ICMP requests with size packets larger than expected. Ping of the Death attack.
+* DOS by saturation 2 SMURF - Massive send of ICMP requests towards a host, can be distributed and using broadcast to multiply the attack. --> Forbid broadcast request from external network.
+* DOS by saturation 3 SMURF - SMURF attack consists on sending an ICMP Echo Request packet to a network broadcast address. The attacker indicates as the source address in the ICMP request packet, the address of the host he wants to attack. All the hosts of the network receive the packet and answer to the sender with ICMP Echo Reply
+* DOS by Redirection - Massive sends of ICMP Redirect to a routing equipment with erroneous addresses. To force the equipment to modify its routing table. The goal is to make the traffic go through a route where a sniffing element
+* Packets dissimulation. Use of ICMP as a transport protocol, Any IP traffic may be included (encapsulated) within ICMP packets.
+
+## SAAS
+
+{todo}
+
+## ISMS
+
+Information Security Management System
+
+An SMSI is intended to choose adapted security means to protect and keep protected sensitive assets on a defined perimeter of the company.
+
+Based on the quality model : __PDCA__
+
+* __PLAN__: plan security actions to undertake
+	* _"I say what I do"_
+	* Define parameter
+	* Define policy
+	* Deal with the risk and identify uncovered risks. Risk management includes 4 possible treatments for each identified risk. Acceptation - Avoidance - Transfer - Reduction
+* __DO__: realize what has been planed
+	* _"I do what I say"_
+* __CHECK__: assess that there is no gap between what was planed and what is realized
+	* _"I control what I do"_
+* __ACT__: undertake corrective actions plan for gaps
+	* _"I correct and improve what I did and what I said"_
 
 # Security Network Architecture & Filtering
 
@@ -451,11 +493,15 @@ __Asymmetric algorithms :__ Algorithms using a pair of keys : a public key and a
 
 The ciphering key is identical to the deciphering key
 
+> Each partner's network as to have : n(n-1)/2 keys
+
 __Problems :__ Partners must agree upon the key, key must be exchanged and key must be kept secret.
 
 ### Asymmetric ciphering Public keys systems
 
 Each person has his private key AND his public key.
+
+> N actors mean N differents keys
 
 There are different usages :
 
@@ -489,6 +535,9 @@ so that e and (p-1)(q-1) are mutually prime.
 Numbers e AND n constitute the public key. 
 Numbers d AND n constitute the private key. 
 
+### AES
+
+{todo}
 
 ## PKI
 
@@ -522,8 +571,10 @@ Other terms :
 
 
 
+{todo complete with the course}
 
 
+{todo AES}
 
 
 ___
