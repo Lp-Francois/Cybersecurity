@@ -31,7 +31,6 @@ ___
 	* [VPN](https://github.com/AsterYujano/Cybersecurity#vpn)
 	* [Cryptography](https://github.com/AsterYujano/Cybersecurity#cryptography)
 	* [PKI](https://github.com/AsterYujano/Cybersecurity#pki)
-}
 6. [Sources](https://github.com/AsterYujano/Cybersecurity#sources)
 
 	
@@ -511,7 +510,7 @@ It is very important in Commercial transactions to make sure you are sending you
 **R**egistration **A**uthority verifies the prospective key owner's identify and sends it to the CA to issue a certificate.
 It is a kind of secretary of CA. It verifies your informations.
 
-**RA** interacts with the subscribers for providing **CA** services and the **RA** is subsumed in the **CA**, which takes total responsibility for all action of the **RA**.
+**RA** interacts with the subscribers for providing **CA** services and the **RA** is subsumed (included) in the **CA**, which takes total responsibility for all action of the **RA**.
 
 Other terms :
 
@@ -544,6 +543,12 @@ https://www.ivision.fr/redondance-et-securite-du-systeme-dinformation/
 https://en.wikipedia.org/wiki/Challenge-Handshake_Authentication_Protocol
 
 https://en.wikipedia.org/wiki/IP_tunnel
+
+https://www.youtube.com/watch?v=i-rtxrEz_E8
+
+https://www.youtube.com/watch?v=t0F7fe5Alwg&t=312s
+
+https://www.youtube.com/watch?v=nUs9k5aBeqg
 
 
 
