@@ -280,10 +280,12 @@ origin address, destination address, origin service port, destination service po
 Using ACL allows to write specific rules. But a router doesn't log traffic easily.
 
 > If a filtering equipment needs to filter on port numbers, in which headers will it find them ?
-*Application Layer in the TCP-IP Model*
+>
+> *Application Layer in the TCP-IP Model*
 
 > To define if the crossing traffic is the beginning of a TCP connection, which header should consider an equipment of filtering ? Do you know what bit/flag must be examined in this header ?
-* TCP-IP header : ACK bit is set to 0, it means that the first connection to a server.
+>
+> *TCP-IP header : ACK bit is set to 0, it means that the first connection to a server.*
 
 ### Intrusion Detection Systems
 
