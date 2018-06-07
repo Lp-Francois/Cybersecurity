@@ -501,7 +501,7 @@ The problem with the Asymetric cyphering is the following : "How can I be sure t
 
 __Digital Certificates__
 
-**D**igital **C**ertificates are data packages that identify : in this case person that is associated with his public key. A digital certificate is protected with asymetric cryptography and hold by a trusted authority (**C**ertificate **A**uthority).
+**D**igital **C**ertificates are data packages that identify a person that is associated with his public key. A digital certificate is protected with asymetric cryptography and hold by a trusted authority (**C**ertificate **A**uthority).
 
 Imagine that Alice got a digital certificate. 
 So when Bob wants to send confidential informations to Alice, he can ask at a **CA** the Alice's digital certificate, compare it with the public key Alice is sending. Then he sends the encrypted message with the public key to Alice.
