@@ -567,11 +567,11 @@ It is a kind of secretary of CA. It verifies your informations before get certif
 
 **RA** interacts with the subscribers for providing **CA** services and the **RA** is subsumed (included) in the **CA**, which takes total responsibility for all action of the **RA**.
 
-{todo Private key delivering stuff}
+The RA checks the identity of the client and create a pair of keys. It sends the private key to the client. Then the RA sends the public key to the CA for the certification.
 
 ### Other terms
 
-**C**ertificate **R**evocation **L**ists are lists of certificates that are no longer useable. The list is frequently up-to-date.
+**C**ertificate **R**evocation **L**ists are lists of certificates that are no longer useable. The list is frequently up-to-date and contains serial numbers of CA.
 
 **R**ecovery **A**gent : a person who is authorized to recover lost private key.
 
@@ -581,11 +581,60 @@ __2 Documents describe a PKI foundation :__
 
 **C**ertificate **P**olicy: gives the rules on how to use the certificate and formalize the guarantees it offers. The authentification control level. Public document.
 
-**C**ertificate **P**ratice **S**tatement (CPS): describes means installed by the PKI to reach guarantees as announced in the CP. Private document.
+**C**ertificate **P**ratice **S**tatement (CPS): describes means installed by the PKI to reach guarantees as announced in the CP. Private document. Processes details on the way CA, RA and other PKI components work certificate life-cycle description, CRLs management
 
 ### LDAP repository
 
 Employed to store CR Lists (CRL) and certicates.
+
+__Main attacks :__
+* Denial of service with overloaded traffic
+* Spoof client identity
+* Identity server usurpation
+
+__ACL__ control the access and the rights specify to clients (rw)
+
+__Several Authentification :__
+* Anonymous authentification - without pass
+* Root DN authentification
+* Simple authentification
+* Simple authentification with TLS/SSL
+* Auth with Certificates exchanges
+
+### X509 certificate
+
+X509 is the most employed standard in PKI. This standard allows applications use as SSL, IPSec, S/MIME.
+
+Main elements :
+
+* Certificate Version
+* Certificate Serial number
+* CA signature algorithm description (ex: RSA with MD5)
+* name of the CA who generate the certificate
+* Validity dates
+* User name
+* __public Key__
+* CA digital signature
+
+### Certificate Trust Level
+
+A PKI may define several certificate level depending on the required level of trust needed.
+
+Differences between the trust levels frequently concern:
+* level of control followed during the registering process
+* the keys and certificate delivering process
+* the medium employed to store private keys and certificates
+* The certificate purposes (signature, ciphering …)
+
+__Class 1 - Low level__ : link email and public key, without legal/commercial value
+
+__Class 2 - Medium level__: Link between an identity and a public key done through the network, Common transaction : digital trade (commerce)
+
+__Class 3 - High level__: Link between a physical identity and a public key, Certificate delivered by the PKI on a face to face process
+
+> Give the two techniques a PKI can use to implement the revocation mechanism.
+
+
 
 
 {todo AES}
