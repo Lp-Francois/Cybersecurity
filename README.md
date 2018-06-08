@@ -608,8 +608,6 @@ It is a kind of secretary of CA. It verifies your informations before get certif
 
 **RA** interacts with the subscribers for providing **CA** services and the **RA** is subsumed (included) in the **CA**, which takes total responsibility for all action of the **RA**.
 
-The RA checks the identity of the client and create a pair of keys. It sends the private key to the client. Then the RA sends the public key to the CA for the certification.
-
 ### Other terms
 
 **C**ertificate **R**evocation **L**ists are lists of certificates that are no longer useable. The list is frequently up-to-date and contains serial numbers of CA.
