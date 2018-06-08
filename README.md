@@ -27,7 +27,7 @@ ___
 	* [Firewall & Router](https://github.com/AsterYujano/Cybersecurity#firewall--router)
 	* [Intrusion Detection Systems](https://github.com/AsterYujano/Cybersecurity#intrusion-detection-systems)
 	* [Internet Access point](https://github.com/AsterYujano/Cybersecurity#internet-access-point)
-5. [PKI Digital certificate & Digital signature](https://github.com/AsterYujano/Cybersecurity#pki-digital-certificate--digital-signature) {todo modify title} 
+5. [How to etablish trust ?](https://github.com/AsterYujano/Cybersecurity#how-to-etablish-trust-)
 	* [Logs & Security Qualification](https://github.com/AsterYujano/Cybersecurity#logs--security-qualification)
 	* [Remote accesses](https://github.com/AsterYujano/Cybersecurity#remote-accesses)
 	* [VPN](https://github.com/AsterYujano/Cybersecurity#vpn)
@@ -275,8 +275,6 @@ __Prevention__
 
 # Cloud Computing & ISMS
 
-{todo IPSEC ?}
-
 ## ICMP
 
 Internet Control Message Protocol, usefull to debug !
@@ -295,7 +293,7 @@ __Risks__:
 
 ## SAAS
 
-{todo}
+Software As A Service, the application is hosted in the Cloud
 
 ## ISMS
 
@@ -365,7 +363,7 @@ __Goal:__ Alert and restrict the time delay for the hacker to act.
 	* Unexplained significant level of traffic
 	* unusual ingoing or outgoing accesses with unusual sites
 	* over busy networks links
-	* complaining from users or from remote systems {todo : developper la ligne}
+	* complaining from users or from remote systems
 	
 	* __Passive NIDS__: watch and alert,
 	* __Active NIDS__: watch and may interrupt suspected sessions. Use this way when false positive are rare.
@@ -407,7 +405,7 @@ weakest channel passing through*. It is very important.
 
 > In order to protect from danger coming with mobile codes describe three main content filtering priciples that may be employed
 >
-> {todo} Answer
+> {todo}
 
 # How to etablish trust ?
 
@@ -489,6 +487,35 @@ __Symmetric algorithms :__ the same key is shared between the sender and the rec
 
 __Asymmetric algorithms :__ Algorithms using a pair of keys : a public key and a private key
 
+### IPsec (Internet Protocol Security)
+
+Set of protocols using algorithms to convey securely data over IP. 
+Works on the layer 3. Implemented in about 40 RFCs.
+
+__Where is that implemented ?__
+
+On the equipment, on modifying its kernel IP stack. May be complex
+ 
+On the equipment but with separation of IPsec processing routines from IP routines. Ipsec code inserted bewteen layer liaison and layer network.
+
+__Various services__
+
+Extremities authentification (level 3, not user), data confidentiality, data integrity, protection against listening and against replay.
+
+2 protocols using different algorithms (SHA, AES, 3DES):
+
+__Authentification Header Protocol (AH)__ : authentification extremities & integrity
+> Counter *IP spoofing* (cause need Authentification / integrity confidentiality)
+
+__Encapsulated Security Payload (ESP)__ : hold data/headers confidentiality, extremities authenticity.
+> Counter *IP Sniffing* (cause need confidentiality) & *IP spoofing* (cause need Authentification / integrity confidentiality)
+
+#### 2 protection modes
+
+__Transport mode__: Protect data -> encapsulation
+
+__Tunnel mode__: Protect Original Ip header & data --> encapsulation
+
 ### Symmetric ciphering Secret keys systems
 
 The ciphering key is identical to the deciphering key
@@ -496,6 +523,22 @@ The ciphering key is identical to the deciphering key
 > Each partner's network as to have : n(n-1)/2 keys
 
 __Problems :__ Partners must agree upon the key, key must be exchanged and key must be kept secret.
+
+#### 3DES (Data encryption Standart)
+
+DES : 56 bits key
+
+Triple DES : 
+	
+	3 distinctive keys (168 bits) : K1 --> K2 --> K3
+
+	2 distinctive keys (168 bits) : K1 --> K2 --> K1
+
+#### AES (Advanced Encryption Standart)
+
+Replace DES.
+
+128 bits block ciphring with 128, 192 or 256 bits keys.
 
 ### Asymmetric ciphering Public keys systems
 
@@ -515,7 +558,7 @@ The sender (Alice) ciphers her message with her own private key. Only Alice is a
 
 Everyone knowing the public key of the sender (Alice) may decipher the message and so verify the signature.
 
-### RSA
+#### RSA
 
 RSA is a kind of encryption.
 
@@ -535,9 +578,6 @@ so that e and (p-1)(q-1) are mutually prime.
 Numbers e AND n constitute the public key. 
 Numbers d AND n constitute the private key. 
 
-### AES
-
-{todo}
 
 ## PKI
 
@@ -633,12 +673,6 @@ __Class 2 - Medium level__: Link between an identity and a public key done throu
 __Class 3 - High level__: Link between a physical identity and a public key, Certificate delivered by the PKI on a face to face process
 
 > Give the two techniques a PKI can use to implement the revocation mechanism.
-
-
-
-
-{todo AES}
-
 
 ___
 
