@@ -543,11 +543,11 @@ Numbers d AND n constitute the private key.
 
 **P**ublic **K**ey **I**nfrastructure
 
-The problem with the Asymetric cyphering is the following : "How can I be sure that I'm sending my private message to Alice and not to some Hackers ?"
+The problem with the Asymetric cyphering is the following : "How can I be sure that I'm sending my private message to Alice and not to some Hackers ? Is the public key the Alice one ?"
 
 > PKI is a networked system that enables companies and users to exchange information and money safely and securely.
 
-__Digital Certificates__
+### Digital Certificates
 
 **D**igital **C**ertificates are data packages that identify a person that is associated with his public key. A digital certificate is protected with asymetric cryptography and hold by a trusted authority (**C**ertificate **A**uthority).
 
@@ -556,12 +556,20 @@ So when Bob wants to send confidential informations to Alice, he can ask at a **
 
 It is very important in Commercial transactions to make sure you are sending your informations to the right web site.
 
+### Certificate Authority
+
+Entity in the PKI who generates and signs the certificates. Certificates contain the public keys. The CA is the trusted third party whose signature appears on the certificate.
+
+### Registration Authority
+
 **R**egistration **A**uthority verifies the prospective key owner's identify and sends it to the CA to issue a certificate.
-It is a kind of secretary of CA. It verifies your informations.
+It is a kind of secretary of CA. It verifies your informations before get certified by the PKI. Different authentification modes are possible : face-to-face, sending ID card copy.
 
 **RA** interacts with the subscribers for providing **CA** services and the **RA** is subsumed (included) in the **CA**, which takes total responsibility for all action of the **RA**.
 
-Other terms :
+{todo Private key delivering stuff}
+
+### Other terms
 
 **C**ertificate **R**evocation **L**ists are lists of certificates that are no longer useable. The list is frequently up-to-date.
 
@@ -569,9 +577,15 @@ Other terms :
 
 **K**ey **E**scrow : Keeping secured copies of private keys for law enforcement purposes.
 
+__2 Documents describe a PKI foundation :__
 
+**C**ertificate **P**olicy: gives the rules on how to use the certificate and formalize the guarantees it offers. The authentification control level. Public document.
 
-{todo complete with the course}
+**C**ertificate **P**ratice **S**tatement (CPS): describes means installed by the PKI to reach guarantees as announced in the CP. Private document.
+
+### LDAP repository
+
+Employed to store CR Lists (CRL) and certicates.
 
 
 {todo AES}
