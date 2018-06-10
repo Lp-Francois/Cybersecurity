@@ -20,7 +20,7 @@ ___
 	* [Phisphing](https://github.com/AsterYujano/Cybersecurity#phishing)
 3. [Cloud Computing & ISMS](https://github.com/AsterYujano/Cybersecurity#cloud-computing--isms)
 	* [ICMP](https://github.com/AsterYujano/Cybersecurity#icmp)
-	* [SASS](https://github.com/AsterYujano/Cybersecurity#sass)
+	* [Services](https://github.com/AsterYujano/Cybersecurity#services)
 	* [ISMS](https://github.com/AsterYujano/Cybersecurity#isms)
 4. [Security Network Architecture & Filtering](https://github.com/AsterYujano/Cybersecurity#security-network-architecture--filtering)
 	* [DMZ](https://github.com/AsterYujano/Cybersecurity#dmz)
@@ -292,9 +292,25 @@ __Risks__:
 * DOS by Redirection - Massive sends of ICMP Redirect to a routing equipment with erroneous addresses. To force the equipment to modify its routing table. The goal is to make the traffic go through a route where a sniffing element
 * Packets dissimulation. Use of ICMP as a transport protocol, Any IP traffic may be included (encapsulated) within ICMP packets.
 
-## SAAS
+## Services
 
-Software As A Service, the application is hosted in the Cloud
+### SAAS
+
+Software As A Service, the application is hosted in the Cloud. Access possible with a web browser.
+
+> Examples : Google apps, paypal, stripe
+
+### PAAS
+
+Platforme As A Service
+
+Middlewares where devs can deploy applications
+
+> Examples : Google App Engine (java, python, Go), Microsoft Azure (.NET, java, php), Heroku (Java, ruby)
+
+### IAAS
+
+Infrastructure as a Service : Rent and deployment of servers (OS), and infrastructure elements (Amazon S3, Microsoft Azure)
 
 ## ISMS
 
