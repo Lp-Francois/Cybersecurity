@@ -43,7 +43,7 @@ ___
 
 ```
 "Every security rule or recommendation must be accompanied by its justification
-in order to net be rejected or by-passed"
+in order to not be rejected or by-passed"
 
 Trusted networks zone => networks on which we master the security
 
