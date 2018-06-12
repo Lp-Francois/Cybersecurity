@@ -202,14 +202,17 @@ Apply patches, don't install unnecessary products and utilities, minimize starte
 Sensitization : sessions, flyers, etc.
 
 Teach best practices to follow :
-- Doesn't open all documents,
+- Don't all documents,
 - Care to downloading,
 - Read the security charts and know the punishments.
 
 ### Antivirus
 _Scanner method_ - scan signatures
-_Heuristic Method_ - Look for abnormal behavio
+
+_Heuristic Method_ - Look for abnormal behavior
+
 _Generic Method_ - Have a reference (clean file) and compare others files to it. A virus modify the objects he infects.
+
 _Behavior analisis in Sandboxes_ - Best way but expensive.
 
 ### Watch about antivirus news & Update
@@ -217,7 +220,7 @@ Updates and test. Read the news.
 
 ## Cross Site Request Forgery Attack
 
-An attacker executes un solicited action by a client on a site thanks to `cookies`.
+An attacker executes un solicited action by a client on a site thanks to `cookies`. This attack is commonly called "Sea-surfing".
 
 *example :*
 
