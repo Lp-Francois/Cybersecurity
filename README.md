@@ -303,19 +303,23 @@ __Risks__:
 
 Software As A Service, the application is hosted in the Cloud. Access possible with a web browser.
 
+All is included
+
 > Examples : Google apps, paypal, stripe
 
 ### PAAS
 
 Platforme As A Service
 
-Middlewares where devs can deploy applications
+Middlewares where devs can deploy applications. You have YOUR application on the cloud and you can manag with only your application.
 
 > Examples : Google App Engine (java, python, Go), Microsoft Azure (.NET, java, php), Heroku (Java, ruby)
 
 ### IAAS
 
 Infrastructure as a Service : Rent and deployment of servers (OS), and infrastructure elements (Amazon S3, Microsoft Azure)
+
+They give the network with the machine but you choose the confirguration.
 
 ## ISMS
 
