@@ -402,7 +402,7 @@ __Two approaches :__
 __Two problems :__
 
 * Up-to-date signature bases (exhaustivity of attacks)
-* Efficiency of apckets capture
+* Efficiency of packets capture
 
 ## Internet Access Point
 
